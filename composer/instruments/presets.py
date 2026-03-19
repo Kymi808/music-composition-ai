@@ -85,6 +85,41 @@ class GenrePresets:
             "accompaniment": GM_INSTRUMENTS["acoustic_guitar_steel"],
             "bass": GM_INSTRUMENTS["electric_bass_finger"],
         },
+        "celtic": {
+            "melody": GM_INSTRUMENTS["fiddle"],
+            "harmony": GM_INSTRUMENTS["flute"],
+            "accompaniment": GM_INSTRUMENTS["acoustic_guitar_nylon"],
+            "bass": GM_INSTRUMENTS["acoustic_bass"],
+            "pad": GM_INSTRUMENTS["bagpipe"],
+        },
+        "middle_eastern": {
+            "melody": GM_INSTRUMENTS["shanai"],
+            "harmony": GM_INSTRUMENTS["sitar"],
+            "accompaniment": GM_INSTRUMENTS["string_ensemble_1"],
+            "bass": GM_INSTRUMENTS["acoustic_bass"],
+            "pad": GM_INSTRUMENTS["pad_warm"],
+        },
+        "wuxia": {
+            "melody": GM_INSTRUMENTS["koto"],
+            "harmony": GM_INSTRUMENTS["flute"],
+            "accompaniment": GM_INSTRUMENTS["string_ensemble_1"],
+            "bass": GM_INSTRUMENTS["cello"],
+            "pad": GM_INSTRUMENTS["pad_warm"],
+        },
+        "fantasy": {
+            "melody": GM_INSTRUMENTS["flute"],
+            "harmony": GM_INSTRUMENTS["string_ensemble_1"],
+            "accompaniment": GM_INSTRUMENTS["choir_aahs"],
+            "bass": GM_INSTRUMENTS["contrabass"],
+            "pad": GM_INSTRUMENTS["orchestral_harp"],
+        },
+        "heavenly": {
+            "melody": GM_INSTRUMENTS["choir_aahs"],
+            "harmony": GM_INSTRUMENTS["church_organ"],
+            "accompaniment": GM_INSTRUMENTS["celesta"],
+            "bass": GM_INSTRUMENTS["orchestral_harp"],
+            "pad": GM_INSTRUMENTS["pad_choir"],
+        },
     }
 
     @classmethod

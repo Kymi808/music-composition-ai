@@ -95,6 +95,47 @@ METAL_PATTERN = {
     3.5:   [("closed_hi_hat", 0.9)],
 }
 
+CELTIC_PATTERN = {
+    0.0:  [("bass_drum_1", 1.1)],
+    0.5:  [("tambourine", 0.7)],
+    1.0:  [("snare_drum", 0.8), ("tambourine", 0.6)],
+    1.5:  [("tambourine", 0.7)],
+    2.0:  [("bass_drum_1", 1.0)],
+    2.5:  [("tambourine", 0.7)],
+    3.0:  [("snare_drum", 0.8), ("tambourine", 0.6)],
+    3.5:  [("tambourine", 0.7)],
+}
+
+MIDDLE_EASTERN_PATTERN = {
+    0.0:   [("low_bongo", 1.2)],
+    0.5:   [("mute_hi_conga", 0.7)],
+    0.75:  [("mute_hi_conga", 0.6)],
+    1.0:   [("open_hi_conga", 1.0)],
+    1.5:   [("mute_hi_conga", 0.7)],
+    2.0:   [("low_bongo", 1.1)],
+    2.5:   [("mute_hi_conga", 0.6)],
+    3.0:   [("open_hi_conga", 1.0), ("low_bongo", 0.8)],
+    3.5:   [("mute_hi_conga", 0.7)],
+    3.75:  [("mute_hi_conga", 0.6)],
+}
+
+WUXIA_PATTERN = {
+    0.0:   [("bass_drum_1", 1.0)],
+    2.0:   [("chinese_cymbal", 0.6)],
+}
+
+FANTASY_PATTERN = {
+    0.0:  [("bass_drum_1", 1.1), ("crash_cymbal_1", 0.5)],
+    1.0:  [("low_tom", 0.7)],
+    2.0:  [("bass_drum_1", 0.9)],
+    3.0:  [("low_mid_tom", 0.8)],
+}
+
+HEAVENLY_PATTERN = {
+    0.0:  [("ride_cymbal_1", 0.4)],
+    3.0:  [("ride_cymbal_1", 0.3)],
+}
+
 GENRE_PATTERNS = {
     "rock": ROCK_PATTERN,
     "pop": POP_PATTERN,
@@ -109,6 +150,11 @@ GENRE_PATTERNS = {
     "classical": ORCHESTRAL_PATTERN,
     "blues": ROCK_PATTERN,
     "rnb": POP_PATTERN,
+    "celtic": CELTIC_PATTERN,
+    "middle_eastern": MIDDLE_EASTERN_PATTERN,
+    "wuxia": WUXIA_PATTERN,
+    "fantasy": FANTASY_PATTERN,
+    "heavenly": HEAVENLY_PATTERN,
 }
 
 

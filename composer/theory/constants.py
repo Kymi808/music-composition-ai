@@ -58,6 +58,8 @@ SCALE_PATTERNS = {
     "hungarian_minor":   [2, 1, 3, 1, 1, 3, 1],
     "phrygian_dominant": [1, 3, 1, 2, 1, 2, 2],
     "double_harmonic":   [1, 3, 1, 2, 1, 3, 1],
+    "hirajoshi":         [2, 1, 4, 1, 4],
+    "in_scale":          [1, 4, 1, 4, 2],
 }
 
 # Alias commonly used scale names

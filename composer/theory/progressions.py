@@ -47,6 +47,10 @@ PROGRESSION_LIBRARY = {
     "chromatic_mediant_major": [1, 6, 4, 1],   # With chromatic mediants
     "modal_dorian": [1, 4, 1, 4],              # i-IV-i-IV (Dorian)
     "modal_mixolydian": [1, 7, 4, 1],          # I-bVII-IV-I
+    "modal_lydian": [1, 2, 5, 1],               # I-II-V-I (Lydian bright)
+    "modal_phrygian_dominant": [1, 2, 3, 4],    # Phrygian descent feel
+    "pentatonic_flow": [1, 4, 5, 1],            # Simple pentatonic motion
+    "ascending_fourths": [1, 4, 7, 3],          # Rising fourths
 }
 
 # Genre-specific progression preferences
@@ -63,6 +67,11 @@ GENRE_PROGRESSIONS = {
     "metal": ["minor_dark", "minor_tense", "minor_epic"],
     "rnb": ["jazz_turnaround", "pop_emotional", "doo_wop"],
     "blues": ["rock_bluesy", "rock_classic"],
+    "celtic": ["folk_simple", "modal_mixolydian", "modal_dorian", "rock_classic"],
+    "middle_eastern": ["modal_phrygian_dominant", "minor_dramatic", "andalusian", "minor_dark"],
+    "wuxia": ["pentatonic_flow", "folk_simple", "minor_cinematic", "ascending_fourths"],
+    "fantasy": ["minor_epic", "pachelbel", "modal_lydian", "minor_cinematic", "minor_heroic"],
+    "heavenly": ["modal_lydian", "pachelbel", "classical_plagal", "ascending_fourths"],
 }
 
 # Mood-specific progression preferences
@@ -83,6 +92,8 @@ MOOD_PROGRESSIONS = {
     "dreamy": ["modal_dorian", "jazz_turnaround", "pop_emotional"],
     "suspenseful": ["minor_tense", "minor_dark", "minor_dramatic"],
     "uplifting": ["pop_uplifting", "pop_classic", "rock_classic"],
+    "mystic": ["modal_dorian", "minor_dark", "modal_lydian", "minor_lament"],
+    "heavenly": ["modal_lydian", "pachelbel", "classical_plagal", "ascending_fourths"],
 }
 
 

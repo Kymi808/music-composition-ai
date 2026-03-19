@@ -125,7 +125,7 @@ class Scale:
             "natural_minor", "harmonic_minor", "melodic_minor",
             "dorian", "phrygian", "locrian", "aeolian",
             "pentatonic_minor", "blues", "phrygian_dominant",
-            "hungarian_minor",
+            "hungarian_minor", "hirajoshi", "in_scale",
         )
 
     def relative_major_or_minor(self) -> Scale:

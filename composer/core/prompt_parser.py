@@ -24,6 +24,8 @@ MOOD_KEYWORDS = {
     "dreamy": ["dreamy", "dream", "ethereal", "floating", "surreal", "hazy", "misty"],
     "suspenseful": ["suspenseful", "creepy", "thriller", "horror", "spooky", "chilling"],
     "uplifting": ["uplifting", "inspiring", "hopeful", "optimistic", "soaring", "elevating"],
+    "mystic": ["mystic", "mystical", "arcane", "occult", "spiritual", "ritual", "shamanic", "enchanted"],
+    "heavenly": ["heavenly", "divine", "angelic", "celestial", "transcendent", "sacred", "holy", "godly", "paradise"],
 }
 
 # Genre keywords
@@ -36,7 +38,12 @@ GENRE_KEYWORDS = {
     "metal": ["metal", "heavy metal", "death metal", "progressive metal", "thrash"],
     "classical": ["classical", "baroque", "romantic era", "concerto", "sonata", "fugue"],
     "ambient": ["ambient", "atmospheric", "soundscape", "drone", "new age", "meditation"],
-    "folk": ["folk", "acoustic", "celtic", "country", "bluegrass"],
+    "folk": ["folk", "acoustic", "country", "bluegrass"],
+    "celtic": ["celtic", "irish", "scottish", "gaelic", "highlands"],
+    "middle_eastern": ["middle eastern", "arabic", "persian", "turkish", "ottoman", "desert", "arabian", "moroccan", "egyptian"],
+    "wuxia": ["wuxia", "xianxia", "cultivation", "martial arts", "chinese fantasy", "jianghu", "wulin"],
+    "fantasy": ["fantasy", "rpg", "tavern", "elven", "fairy", "enchanted", "magical kingdom", "dragon"],
+    "heavenly": ["heavenly", "divine", "angelic", "celestial", "paradise", "ethereal choir"],
     "blues": ["blues", "delta blues", "chicago blues", "soul"],
     "rnb": ["r&b", "rnb", "rhythm and blues", "neo-soul", "motown"],
     "pop": ["pop", "dance pop", "synth pop", "indie pop"],
@@ -47,7 +54,7 @@ THEME_KEYWORDS = {
     "battle": ["battle", "fight", "combat", "war", "clash", "duel"],
     "nature": ["nature", "forest", "ocean", "mountain", "river", "garden", "rain", "storm", "wind", "sea"],
     "space": ["space", "cosmic", "galaxy", "stellar", "nebula", "astral", "interstellar"],
-    "medieval": ["medieval", "castle", "knight", "kingdom", "dungeon", "dragon", "fantasy"],
+    "medieval": ["medieval", "castle", "knight", "kingdom", "dungeon"],
     "urban": ["urban", "city", "street", "downtown", "metropolitan", "neon"],
     "romance": ["romance", "wedding", "love story", "heartfelt"],
     "chase": ["chase", "pursuit", "running", "escape", "flight"],
@@ -278,6 +285,8 @@ class PromptParser:
             "dreamy": (65, 85),
             "suspenseful": (80, 110),
             "uplifting": (110, 135),
+            "mystic": (60, 95),
+            "heavenly": (60, 90),
         }
 
         if mood in mood_tempos:
@@ -308,6 +317,7 @@ class PromptParser:
             "dark": 0.7, "joyful": 0.7, "melancholic": 0.4, "peaceful": 0.3,
             "romantic": 0.5, "mysterious": 0.5, "dreamy": 0.35,
             "triumphant": 0.85, "adventurous": 0.75, "suspenseful": 0.6,
+            "mystic": 0.4, "heavenly": 0.3,
         }
         return mood_intensity.get(mood, 0.6)
 
@@ -319,6 +329,8 @@ class PromptParser:
         modal_moods = {
             "mysterious": "dorian",
             "dreamy": "lydian",
+            "mystic": "whole_tone",
+            "heavenly": "lydian",
         }
         if mood in modal_moods:
             return modal_moods[mood]
